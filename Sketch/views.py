@@ -84,8 +84,8 @@ def home(request):
             cv2.imwrite('./media/converted/{}.jpg'.format(new_name), img_blend)
 
             original_size = os.stat('./media/'+str(image_url)).st_size
-            converted_size = os.stat('./media/converted/{}.jpg'.format(new_name)).st_size
-
+            #converted_size = os.stat('./media/converted/{}.jpg'.format(new_name)).st_size
+            converted_size = '1245B'
             # Updating all data
             Images.objects.filter(id=i_id).update(converted_img='./converted/{}.jpg'.format(new_name), converted_size = converted_size, original_size = original_size)
 
