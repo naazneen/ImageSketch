@@ -54,8 +54,8 @@ function updateTextInput(val) {
         </div>
         <div class="col-sm-6">
             <h6>Sketch</h6>
-            <a href=".{{ images.converted_img.url }}" download>
-                <img src=".{{ images.converted_img.url }}" alt="Converted Image will come here">
+            <a href="{{ images.converted_img.url }}" download>
+                <img src="{{ images.converted_img.url }}" alt="Converted Image will come here">
             </a>
             Size: {{ images.converted_size  }}B
         </div>
