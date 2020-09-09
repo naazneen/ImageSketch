@@ -81,7 +81,7 @@ def home(request):
                                         sigmaX=0, sigmaY=0)
 
             img_blend = dodgeV2(img_gray, img_blur)
-            cv2.imwrite('/media/converted/{}.jpg'.format(new_name), img_blend)
+            cv2.imwrite('./media/converted/{}.jpg'.format(new_name), img_blend)
 
             original_size = os.stat('./media/'+str(image_url)).st_size
             #converted_size = os.stat('./media/converted/{}.jpg'.format(new_name)).st_size
