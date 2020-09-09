@@ -1,1 +1,1 @@
-web: gunicorn ImageSketch.wsgi
+web: gunicorn ImageSketch.wsgi --log-file
